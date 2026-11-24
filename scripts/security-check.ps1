@@ -7,7 +7,7 @@ Write-Host "====================================================================
 Write-Host "            RCWPT DEFENSIVE SECURITY & MALWARE VERIFICATION                     " -ForegroundColor Yellow
 Write-Host "================================================================================" -ForegroundColor Cyan
 
-$ScriptDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
+$ScriptDir = if ($PSScriptRoot) { $PSScriptRoot } else { Split-Path -Parent $MyInvocation.MyCommand.Path }
 $ProjectRoot = Split-Path -Parent $ScriptDir
 $TargetExe = Join-Path $ProjectRoot "rcwpt.exe"
 

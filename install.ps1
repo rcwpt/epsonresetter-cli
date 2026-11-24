@@ -50,16 +50,22 @@ $DbDir = Join-Path $InstallDir "database"
 # 3. Check Local or Release Source
 Write-Host "[2/6] Verifying Release Assets & Integrity..." -ForegroundColor Cyan
 $RepoBase = "https://raw.githubusercontent.com/rcwpt/epsonresetter-cli/main"
-$LocalSourceDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $NeedDownload = $true
-if ($LocalSourceDir -and (Test-Path (Join-Path $LocalSourceDir "rcwpt.exe"))) {
-    Write-Host "    [+] Deploying from local source directory..." -ForegroundColor Green
-    Copy-Item -Path (Join-Path $LocalSourceDir "rcwpt.exe") -Destination $TargetExe -Force
-    if (Test-Path (Join-Path $LocalSourceDir "database")) {
-        Copy-Item -Path (Join-Path $LocalSourceDir "database") -Destination $InstallDir -Recurse -Force
+$scriptPath = if ($PSScriptRoot) { $PSScriptRoot } elseif ($MyInvocation.MyCommand.Path) { $MyInvocation.MyCommand.Path } else { $null }
+
+if ($scriptPath -and (Test-Path -Path $scriptPath -ErrorAction SilentlyContinue)) {
+    $LocalSourceDir = if (Test-Path -Path $scriptPath -PathType Container) { $scriptPath } else { Split-Path -Parent $scriptPath }
+    $localExe = Join-Path $LocalSourceDir "rcwpt.exe"
+    if (Test-Path -Path $localExe -PathType Leaf -ErrorAction SilentlyContinue) {
+        Write-Host "    [+] Deploying from local source directory..." -ForegroundColor Green
+        Copy-Item -Path $localExe -Destination $TargetExe -Force
+        $localDb = Join-Path $LocalSourceDir "database"
+        if (Test-Path -Path $localDb -ErrorAction SilentlyContinue) {
+            Copy-Item -Path $localDb -Destination $InstallDir -Recurse -Force
+        }
+        $NeedDownload = $false
     }
-    $NeedDownload = $false
 }
 
 if ($NeedDownload) {

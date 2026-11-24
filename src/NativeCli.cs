@@ -670,11 +670,23 @@ Examples:
                 Console.ResetColor();
 
                 Console.Write("Select option: ");
-                ConsoleKeyInfo key = Console.ReadKey(true);
-                char opt = char.ToUpper(key.KeyChar);
+                char opt = 'Q';
+                ConsoleKey keyVal = ConsoleKey.Q;
+                try
+                {
+                    ConsoleKeyInfo key = Console.ReadKey(true);
+                    opt = char.ToUpper(key.KeyChar);
+                    keyVal = key.Key;
+                }
+                catch
+                {
+                    int c = Console.Read();
+                    if (c == -1) break;
+                    opt = char.ToUpper((char)c);
+                }
                 Console.WriteLine(opt + "\n");
 
-                if (opt == 'Q' || key.Key == ConsoleKey.Escape)
+                if (opt == 'Q' || keyVal == ConsoleKey.Escape)
                 {
                     Console.Clear();
                     Console.ForegroundColor = ConsoleColor.Green;
@@ -744,7 +756,7 @@ Examples:
                 }
 
                 Console.WriteLine("\nPress any key to return to menu...");
-                Console.ReadKey(true);
+                try { Console.ReadKey(true); } catch { Console.ReadLine(); }
             }
         }
     }
