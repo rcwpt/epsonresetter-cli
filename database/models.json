@@ -1,0 +1,1221 @@
+{
+  "schema_version": "1.0.0",
+  "total_models": 37,
+  "models": [
+    {
+      "id": "L110",
+      "name": "Epson L110",
+      "series": "L Series",
+      "aliases": [
+        "L111",
+        "ME-101"
+      ],
+      "vid": "04B8",
+      "pid": "004A",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6207,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Epson AdjProg L110-L355 & DepEd Ozamiz",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L120",
+      "name": "Epson L120",
+      "series": "L Series",
+      "aliases": [
+        "L121"
+      ],
+      "vid": "04B8",
+      "pid": "0057",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6207,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Epson AdjProg L120 Patched",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L130",
+      "name": "Epson L130",
+      "series": "L Series",
+      "aliases": [],
+      "vid": "04B8",
+      "pid": "005A",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6207,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Epson AdjProg L130-L365",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L210",
+      "name": "Epson L210",
+      "series": "L Series",
+      "aliases": [
+        "L211",
+        "ME-301"
+      ],
+      "vid": "04B8",
+      "pid": "004B",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6207,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Epson AdjProg L110-L355",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L220",
+      "name": "Epson L220",
+      "series": "L Series",
+      "aliases": [],
+      "vid": "04B8",
+      "pid": "005B",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6207,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Epson AdjProg L130-L365",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L300",
+      "name": "Epson L300",
+      "series": "L Series",
+      "aliases": [
+        "L301"
+      ],
+      "vid": "04B8",
+      "pid": "004C",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6207,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Epson AdjProg L110-L355",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L310",
+      "name": "Epson L310",
+      "series": "L Series",
+      "aliases": [
+        "L311"
+      ],
+      "vid": "04B8",
+      "pid": "005C",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6207,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Epson AdjProg L130-L365",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L350",
+      "name": "Epson L350",
+      "series": "L Series",
+      "aliases": [
+        "L351"
+      ],
+      "vid": "04B8",
+      "pid": "004D",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6207,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Epson AdjProg L110-L355",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L355",
+      "name": "Epson L355",
+      "series": "L Series",
+      "aliases": [
+        "L356"
+      ],
+      "vid": "04B8",
+      "pid": "004E",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6207,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Epson AdjProg L110-L355",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L360",
+      "name": "Epson L360",
+      "series": "L Series",
+      "aliases": [],
+      "vid": "04B8",
+      "pid": "005D",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6207,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Epson AdjProg L130-L365",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L365",
+      "name": "Epson L365",
+      "series": "L Series",
+      "aliases": [],
+      "vid": "04B8",
+      "pid": "005E",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6207,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Epson AdjProg L130-L365",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L380",
+      "name": "Epson L380",
+      "series": "L Series",
+      "aliases": [
+        "L382",
+        "L383",
+        "L385"
+      ],
+      "vid": "04B8",
+      "pid": "008A",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6207,
+      "protocol": "BDC/D4",
+      "support_level": "COMMUNITY",
+      "status": "Community Audited",
+      "source": "OpenSource ESC/P2 DB",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L385",
+      "name": "Epson L385",
+      "series": "L Series",
+      "aliases": [
+        "L395"
+      ],
+      "vid": "04B8",
+      "pid": "008B",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6207,
+      "protocol": "BDC/D4",
+      "support_level": "COMMUNITY",
+      "status": "Community Audited",
+      "source": "OpenSource ESC/P2 DB",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L455",
+      "name": "Epson L455",
+      "series": "L Series",
+      "aliases": [
+        "L475",
+        "L485"
+      ],
+      "vid": "04B8",
+      "pid": "0070",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6207,
+      "protocol": "BDC/D4",
+      "support_level": "COMMUNITY",
+      "status": "Community Audited",
+      "source": "OpenSource ESC/P2 DB",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L565",
+      "name": "Epson L565",
+      "series": "L Series",
+      "aliases": [
+        "L566"
+      ],
+      "vid": "04B8",
+      "pid": "007E",
+      "counters": [
+        "main_pad",
+        "platen_pad"
+      ],
+      "max_counter": 6207,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Epson AdjProg L565 Clean",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L800",
+      "name": "Epson L800",
+      "series": "Photo Series",
+      "aliases": [
+        "L801",
+        "L805"
+      ],
+      "vid": "04B8",
+      "pid": "002F",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 7890,
+      "protocol": "BDC/D4",
+      "support_level": "COMMUNITY",
+      "status": "Community Audited",
+      "source": "Photo Stylus Maintenance Spec",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L850",
+      "name": "Epson L850",
+      "series": "Photo Series",
+      "aliases": [
+        "L810"
+      ],
+      "vid": "04B8",
+      "pid": "0068",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 7890,
+      "protocol": "BDC/D4",
+      "support_level": "COMMUNITY",
+      "status": "Community Audited",
+      "source": "Photo Stylus Maintenance Spec",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L1300",
+      "name": "Epson L1300",
+      "series": "L Series A3",
+      "aliases": [],
+      "vid": "04B8",
+      "pid": "0059",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 8500,
+      "protocol": "BDC/D4",
+      "support_level": "COMMUNITY",
+      "status": "Community Audited",
+      "source": "A3 Wide Carriage Spec",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L1800",
+      "name": "Epson L1800",
+      "series": "Photo Series A3",
+      "aliases": [],
+      "vid": "04B8",
+      "pid": "0058",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 9200,
+      "protocol": "BDC/D4",
+      "support_level": "COMMUNITY",
+      "status": "Community Audited",
+      "source": "A3 Photo Maintenance Spec",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L3110",
+      "name": "Epson L3110",
+      "series": "Modern EcoTank",
+      "aliases": [
+        "L3100",
+        "L3101"
+      ],
+      "vid": "04B8",
+      "pid": "1138",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6346,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Dedicated Clean AdjProg L3110",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L1110",
+      "name": "Epson L1110",
+      "series": "Modern EcoTank",
+      "aliases": [],
+      "vid": "04B8",
+      "pid": "1137",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6346,
+      "protocol": "BDC/D4",
+      "support_level": "COMMUNITY",
+      "status": "Sanitized Core Mapped",
+      "source": "L3110 Universal Engine",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L3150",
+      "name": "Epson L3150",
+      "series": "Modern EcoTank",
+      "aliases": [
+        "L3151",
+        "L3156",
+        "L3160"
+      ],
+      "vid": "04B8",
+      "pid": "1139",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6346,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Universal EcoTank Engine",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L4150",
+      "name": "Epson L4150",
+      "series": "Modern EcoTank",
+      "aliases": [
+        "L4160"
+      ],
+      "vid": "04B8",
+      "pid": "1123",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6346,
+      "protocol": "BDC/D4",
+      "support_level": "COMMUNITY",
+      "status": "Sanitized Protocol Mapped",
+      "source": "Universal EcoTank Engine",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L1210",
+      "name": "Epson L1210",
+      "series": "Modern EcoTank",
+      "aliases": [
+        "L1250"
+      ],
+      "vid": "04B8",
+      "pid": "117A",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6346,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Clean Universal L1210-L5290 Suite",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L3210",
+      "name": "Epson L3210",
+      "series": "Modern EcoTank",
+      "aliases": [],
+      "vid": "04B8",
+      "pid": "117B",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6346,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Clean Universal L1210-L5290 Suite",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L3250",
+      "name": "Epson L3250",
+      "series": "Modern EcoTank",
+      "aliases": [
+        "L3251",
+        "L3252",
+        "L3256"
+      ],
+      "vid": "04B8",
+      "pid": "117C",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6346,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Clean Universal L1210-L5290 Suite",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L3260",
+      "name": "Epson L3260",
+      "series": "Modern EcoTank",
+      "aliases": [],
+      "vid": "04B8",
+      "pid": "117D",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6346,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Clean Universal L1210-L5290 Suite",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L5290",
+      "name": "Epson L5290",
+      "series": "Modern EcoTank",
+      "aliases": [
+        "L5296"
+      ],
+      "vid": "04B8",
+      "pid": "117E",
+      "counters": [
+        "main_pad",
+        "platen_pad"
+      ],
+      "max_counter": 6346,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Clean Universal L1210-L5290 Suite",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L5190",
+      "name": "Epson L5190",
+      "series": "Modern EcoTank",
+      "aliases": [],
+      "vid": "04B8",
+      "pid": "1140",
+      "counters": [
+        "main_pad",
+        "platen_pad"
+      ],
+      "max_counter": 6346,
+      "protocol": "BDC/D4",
+      "support_level": "COMMUNITY",
+      "status": "Community Audited",
+      "source": "DepEd Ozamiz Sanitized",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L6160",
+      "name": "Epson L6160",
+      "series": "PrecisionCore EcoTank",
+      "aliases": [
+        "L6161"
+      ],
+      "vid": "04B8",
+      "pid": "1125",
+      "counters": [
+        "maintenance_box"
+      ],
+      "max_counter": 10000,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Epson Clean L6161-L6091 Suite",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L6170",
+      "name": "Epson L6170",
+      "series": "PrecisionCore EcoTank",
+      "aliases": [
+        "L6171"
+      ],
+      "vid": "04B8",
+      "pid": "1126",
+      "counters": [
+        "maintenance_box"
+      ],
+      "max_counter": 10000,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Epson Clean L6161-L6091 Suite",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "L6190",
+      "name": "Epson L6190",
+      "series": "PrecisionCore EcoTank",
+      "aliases": [
+        "L6091"
+      ],
+      "vid": "04B8",
+      "pid": "1127",
+      "counters": [
+        "maintenance_box"
+      ],
+      "max_counter": 10000,
+      "protocol": "BDC/D4",
+      "support_level": "VERIFIED",
+      "status": "Hardware Verified",
+      "source": "Epson Clean L6161-L6091 Suite",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "WF2650",
+      "name": "Epson WorkForce WF-2650",
+      "series": "WorkForce",
+      "aliases": [
+        "WF-2651"
+      ],
+      "vid": "04B8",
+      "pid": "08C2",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6500,
+      "protocol": "BDC/D4",
+      "support_level": "EXPERIMENTAL",
+      "status": "Protocol Modeled (DepEd Ozamiz Malware Purged)",
+      "source": "Forensic Clean Protocol Model",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "WF2660",
+      "name": "Epson WorkForce WF-2660",
+      "series": "WorkForce",
+      "aliases": [
+        "WF-2661"
+      ],
+      "vid": "04B8",
+      "pid": "08C3",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6500,
+      "protocol": "BDC/D4",
+      "support_level": "EXPERIMENTAL",
+      "status": "Protocol Modeled (DepEd Ozamiz Malware Purged)",
+      "source": "Forensic Clean Protocol Model",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "ET2720",
+      "name": "Epson EcoTank ET-2720",
+      "series": "EcoTank ET",
+      "aliases": [
+        "L3150 EU/NA"
+      ],
+      "vid": "04B8",
+      "pid": "1141",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6346,
+      "protocol": "BDC/D4",
+      "support_level": "COMMUNITY",
+      "status": "Community Audited",
+      "source": "International Model Cross-Reference",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "ET2800",
+      "name": "Epson EcoTank ET-2800",
+      "series": "EcoTank ET",
+      "aliases": [
+        "L3210 EU/NA"
+      ],
+      "vid": "04B8",
+      "pid": "1180",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6346,
+      "protocol": "BDC/D4",
+      "support_level": "COMMUNITY",
+      "status": "Community Audited",
+      "source": "International Model Cross-Reference",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    },
+    {
+      "id": "ET2850",
+      "name": "Epson EcoTank ET-2850",
+      "series": "EcoTank ET",
+      "aliases": [
+        "L3250 EU/NA"
+      ],
+      "vid": "04B8",
+      "pid": "1181",
+      "counters": [
+        "main_pad"
+      ],
+      "max_counter": 6346,
+      "protocol": "BDC/D4",
+      "support_level": "COMMUNITY",
+      "status": "Community Audited",
+      "source": "International Model Cross-Reference",
+      "manufacturer": "EPSON",
+      "supported_os": [
+        "Windows 10 x64",
+        "Windows 11 x64",
+        "Windows ARM64"
+      ],
+      "operations": [
+        "detect",
+        "diagnose",
+        "read_counters",
+        "test_print",
+        "backup",
+        "reset"
+      ],
+      "db_version": "1.0.0"
+    }
+  ]
+}

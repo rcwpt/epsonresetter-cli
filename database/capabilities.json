@@ -1,0 +1,43 @@
+{
+  "engine_version": "1.0.0",
+  "supported_protocols": {
+    "BDC/D4": {
+      "name": "Bi-Directional Communication over IEEE 1284.4 D4 Framing",
+      "channels": [
+        "ControlChannel",
+        "DataChannel"
+      ],
+      "features": [
+        "EEPROM Read",
+        "EEPROM Write",
+        "Status Query",
+        "Device ID Detection"
+      ]
+    },
+    "ESC/P-R": {
+      "name": "Epson Standard Code for Printers - Raster",
+      "features": [
+        "Printer Status",
+        "Nozzle Check Pattern",
+        "Ink Level Inquiries"
+      ]
+    },
+    "Win32_Spooler": {
+      "name": "Windows Print Spooler RAW Pass-Through API",
+      "features": [
+        "OpenPrinter",
+        "StartDocPrinter",
+        "WritePrinter",
+        "ReadPrinter"
+      ]
+    }
+  },
+  "safety_rules": [
+    "Dry-run execution by default for write operations",
+    "Mandatory hardware IEEE 1284 Device ID identification prior to memory write",
+    "Mandatory EEPROM backup before counter modification",
+    "Explicit interactive confirmation required from operator",
+    "Post-reset readback verification against physical printer state",
+    "Physical waste pad inspection and replacement warning"
+  ]
+}

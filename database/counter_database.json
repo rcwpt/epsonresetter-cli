@@ -1,0 +1,26 @@
+{
+  "db_version": "1.0.0",
+  "counter_definitions": {
+    "main_pad": {
+      "display_name": "Main Waste Ink Pad Counter",
+      "description": "Accumulated ink waste deposited into bottom chassis porous pads during head cleaning and borderless printing cycles.",
+      "unit": "points",
+      "eeprom_type": "16-bit / 32-bit unsigned integer",
+      "typical_threshold": 6207
+    },
+    "platen_pad": {
+      "display_name": "Platen Waste Ink Pad Counter",
+      "description": "Ink overspray collected at print platen edge sponges during borderless photo printing.",
+      "unit": "points",
+      "eeprom_type": "16-bit unsigned integer",
+      "typical_threshold": 6207
+    },
+    "maintenance_box": {
+      "display_name": "Replaceable Maintenance Box Chip Counter",
+      "description": "User-replaceable maintenance cartridge chip (T04D100 / C13T04D100) on PrecisionCore series.",
+      "unit": "points / percent",
+      "eeprom_type": "One-Wire / I2C Cryptographic Chip",
+      "typical_threshold": 10000
+    }
+  }
+}

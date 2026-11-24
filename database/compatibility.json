@@ -1,0 +1,21 @@
+{
+  "db_version": "1.0.0",
+  "tiers": {
+    "VERIFIED": {
+      "description": "Directly tested on physical hardware or verified against clean official Adjustment Program telemetry.",
+      "models_count": 22
+    },
+    "COMMUNITY": {
+      "description": "Documented in community printer databases with identical ASIC and EEPROM architecture.",
+      "models_count": 13
+    },
+    "EXPERIMENTAL": {
+      "description": "Protocol mapped from reverse-engineered binaries with active malware permanently purged.",
+      "models_count": 2
+    },
+    "UNSUPPORTED": {
+      "description": "Models without verified protocol or EEPROM memory maps.",
+      "models_count": 0
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "db_version": "1.0.0",
+  "repositories": [
+    {
+      "name": "epson-resetter-suite",
+      "url": "https://github.com/rcwpt/epson-resetter-suite",
+      "role": "Original Source & Sanitized Clean Core",
+      "status": "Preserved & Clean"
+    },
+    {
+      "name": "DepEd Division of Ozamiz City Resetter Portal",
+      "url": "https://ozamiz.deped.gov.ph/resetter/",
+      "role": "Public Archive Target for Forensic Audit",
+      "status": "Severely Contaminated (Trojans Purged)"
+    },
+    {
+      "name": "OpenSource ESC/P2 and ESC/P-R Protocol Specifications",
+      "url": "https://github.com",
+      "role": "Protocol Validation & IEEE 1284 Device ID Standard",
+      "status": "Official Standards"
+    }
+  ]
+}

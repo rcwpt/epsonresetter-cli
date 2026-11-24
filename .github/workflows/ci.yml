@@ -1,0 +1,73 @@
+name: RCWPT CI/CD Pipeline & Security Verification
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-and-verify:
+    name: Build Native CLI, Test & Security Audit
+    runs-on: windows-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Setup MSVC & Developer Command Prompt
+      uses: ilammy/msvc-dev-cmd@v1
+
+    - name: Configure CMake (C++20 Native Suite)
+      run: |
+        cmake -B build -S . -DCMAKE_BUILD_TYPE=Release
+
+    - name: Compile C++20 Native Binary
+      run: |
+        cmake --build build --config Release
+
+    - name: Compile Standalone Portable Executable (rcwpt.exe)
+      shell: pwsh
+      run: |
+        $csc = "C:\Windows\Microsoft.NET\Framework64\v4.0.30319\csc.exe"
+        if (-not (Test-Path $csc)) { $csc = "csc.exe" }
+        & $csc /target:exe /platform:x64 /optimize+ /out:rcwpt.exe src\NativeCli.cs
+        Get-FileHash -Path rcwpt.exe -Algorithm SHA256
+
+    - name: Execute Automated Unit & Regression Tests
+      shell: pwsh
+      run: |
+        python tests/test_cli.py
+
+    - name: Run Microsoft Defender Antivirus Audit
+      shell: pwsh
+      run: |
+        & .\scripts\security-check.ps1
+
+    - name: Generate Cryptographic SHA-256 Manifest
+      shell: pwsh
+      run: |
+        & .\scripts\build.ps1
+
+    - name: Package Release ZIP
+      shell: pwsh
+      run: |
+        $pkgDir = "rcwpt-cli-v1.0.0-win-x64"
+        New-Item -ItemType Directory -Path $pkgDir -Force | Out-Null
+        Copy-Item -Path rcwpt.exe -Destination $pkgDir -Force
+        Copy-Item -Path database -Destination $pkgDir -Recurse -Force
+        Copy-Item -Path README.md -Destination $pkgDir -Force
+        Copy-Item -Path LICENSE -Destination $pkgDir -Force
+        Copy-Item -Path SHA256SUMS.txt -Destination $pkgDir -Force
+        Compress-Archive -Path "$pkgDir\*" -DestinationPath "rcwpt-cli-v1.0.0-win-x64.zip" -Force
+        Write-Host "Created release archive rcwpt-cli-v1.0.0-win-x64.zip"
+
+    - name: Upload Release Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: rcwpt-cli-v1.0.0-win-x64
+        path: |
+          rcwpt-cli-v1.0.0-win-x64.zip
+          rcwpt.exe
+          SHA256SUMS.txt
